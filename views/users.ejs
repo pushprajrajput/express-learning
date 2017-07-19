@@ -1,0 +1,26 @@
+<html>
+    <head><title>Express app</title></head>
+    <body>
+        <div>
+            <form method="post" action="user/save"
+        <table><tr>
+            <td>Name</td><td>:</td><td><input type="text" name="name" /></td>
+            </tr>
+            <tr>
+            <td>Email</td><td>:</td><td><input type="email" name="email" /></td>
+            </tr>
+            <tr>
+            <td>Age</td><td></td>:<td><input type="number" name="age" /></td>
+            </tr>
+            <tr>
+            <td></td><td></td><td><input type="submit" value="Save" /></td>
+            </tr></table>
+            </form>
+            </div>
+        <ul>
+       <% users.forEach(function(user, index) { %>
+          <li><%= user.name %></li>
+        <% }); %>
+        </ul>
+    </body>
+</html>
