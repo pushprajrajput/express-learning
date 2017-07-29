@@ -11,20 +11,6 @@ app.set('view engine','ejs');
 app.use(express.static('public'));
 app.use(bodyParser.urlencoded({extended:true}));
 
-var users=[{
-    name:'Amit Dave',
-    email:'adave@gmail.com',
-    age:'25'
-},{
-    name:'Pushpraj Rajput',
-    email:'prajput@gmail.com',
-    age:'25'
-},{
-    name:'Suhit Rathi',
-    email:'srathi@gmail.com',
-    age:'25'
-}];
-
 MongoClient.connect(URL, function(err, db) {
   if (err) return;
 
