@@ -22,6 +22,7 @@ app.get('/',function(req,res){
 });
 
 var m="nahseg cruyrg snar gy"
+var p='';
 app.post('/user/save',function(req,res){
     db.collection('users').save(req.body,(err, data)=>{
     if(err) console.log(err);
