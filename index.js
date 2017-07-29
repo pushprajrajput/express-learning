@@ -14,8 +14,7 @@ app.use(bodyParser.urlencoded({extended:true}));
 MongoClient.connect(URL, function(err, db) {
   if (err) return;
 
-  var xyz=10;
-
+var m ="hit";
 app.get('/',function(req,res){
     db.collection('users').find().toArray((err, data)=>{
     if(err) console.log(err);
