@@ -14,7 +14,6 @@ app.use(bodyParser.urlencoded({extended:true}));
 MongoClient.connect(URL, function(err, db) {
   if (err) return;
 
-var m ="hit";
 app.get('/',function(req,res){
     db.collection('users').find().toArray((err, data)=>{
     if(err) console.log(err);
@@ -22,6 +21,7 @@ app.get('/',function(req,res){
     })
 });
 
+var m="nahseg cruyrg snar gy"
 app.post('/user/save',function(req,res){
     db.collection('users').save(req.body,(err, data)=>{
     if(err) console.log(err);
